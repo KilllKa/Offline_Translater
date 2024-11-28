@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using Newtonsoft.Json;
 
 namespace OfflineTranslator
@@ -46,38 +47,39 @@ namespace OfflineTranslator
                 {'э', "e"}, {'ю', "yu"}, {'я', "ya"}
             };
 
-            var result = "";
+            var result = new StringBuilder();
             foreach (var ch in word)
             {
                 if (transliterationMap.TryGetValue(char.ToLower(ch), out var translitChar))
                 {
-                    result += char.IsUpper(ch) ? 
-                        char.ToUpper(translitChar[0]) + translitChar.Substring(1) : translitChar;
+                    result.Append(char.IsUpper(ch) ? 
+                        char.ToUpper(translitChar[0]) + translitChar.Substring(1) : translitChar);
                 }
                 else
                 {
-                    result += ch;
+                    result.Append(ch);
                 }
             }
-            return result;
+            return result.ToString();
         }
         
         public string TranslateText(string text)
         {
             var words = text.Split(new [] {' ', '\n', '\t', ',', '.', '!', '?'}, StringSplitOptions.RemoveEmptyEntries);
-            for (int i = 0; i < words.Length; i++)
+            
+            var result = new StringBuilder();
+            foreach (var word in words)
             {
-                var word = words[i].ToLower();
-                if (_dictionary.TryGetValue(word, out var translation))
+                if (_dictionary.TryGetValue(word.ToLower(), out var translation))
                 {
-                    words[i] = translation;
+                    result.Append(translation + " ");
                 }
                 else
                 {
-                    words[i] = Transliterate(words[i]);
+                    result.Append(Transliterate(word) + " "); // Используем транслитерацию
                 }
             }
-            return string.Join(" ", words);
+            return result.ToString().Trim();
         }
 
         public void AddOrUpdateWord(string word, string translation)

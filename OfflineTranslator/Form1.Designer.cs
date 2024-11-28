@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnReloadFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBrowseTxt
@@ -119,11 +120,22 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Переведенный текст";
             // 
+            // btnReloadFile
+            // 
+            this.btnReloadFile.Location = new System.Drawing.Point(35, 86);
+            this.btnReloadFile.Name = "btnReloadFile";
+            this.btnReloadFile.Size = new System.Drawing.Size(156, 37);
+            this.btnReloadFile.TabIndex = 9;
+            this.btnReloadFile.Text = "Обновить текст";
+            this.btnReloadFile.UseVisualStyleBackColor = true;
+            this.btnReloadFile.Click += new System.EventHandler(this.btnReloadFile_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 450);
+            this.Controls.Add(this.btnReloadFile);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -138,6 +150,8 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button btnReloadFile;
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
