@@ -1,0 +1,14 @@
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\bin\Debug\OfflineTranslator.exe.config
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\bin\Debug\OfflineTranslator.exe
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\bin\Debug\OfflineTranslator.pdb
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\obj\Debug\OfflineTranslator.csproj.AssemblyReference.cache
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\obj\Debug\OfflineTranslator.Properties.Resources.resources
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\obj\Debug\OfflineTranslator.csproj.GenerateResource.cache
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\obj\Debug\OfflineTranslator.csproj.CoreCompileInputs.cache
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\obj\Debug\OfflineTranslator.exe
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\obj\Debug\OfflineTranslator.pdb
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\obj\Debug\OfflineTranslator.DictionaryForm.resources
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\obj\Debug\OfflineTranslator.Form1.resources
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kirill\RiderProjects\OfflineTranslator\OfflineTranslator\obj\Debug\OfflineT.28D1A03E.Up2Date
